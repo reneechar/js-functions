@@ -211,7 +211,7 @@ function letterGrade(score,maxScore) {
 		return "D";
 	} else {
 		return "F";
-	};
+	}
 }
 
 /**
@@ -221,7 +221,14 @@ function letterGrade(score,maxScore) {
  * @param {object} restaurant   represents a restaurant object
  * @return {object} restaurant
  */
-
+function incrementReviews(restaurant) {
+	if(restaurant.reviews) {
+		restaurant.reviews ++;
+	} else {
+		restaurant.reviews = 1;
+	}
+	return restaurant;
+}
 
 /**
  * Joins two strings with a space.
