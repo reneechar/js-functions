@@ -70,7 +70,9 @@ function divide(x,y) {
  * @param {number} x, number to be squared
  * @return {number} squared
  */
-
+function square(x) {
+	return x*x;
+}
 
 /**
  * Performs a mathematical operation on two numbers.
@@ -81,7 +83,23 @@ function divide(x,y) {
  * @return {number} the result
  */
 
-
+function calculate(operation, x, y) {
+	if (operation==="add") {
+		console.log(x + " + " + y + " = " + (x+y));
+		return add(x,y); 
+	} else if (operation==="subtract") {
+		console.log(x + " - " + y + " = " + (x-y));
+		return subtract(x,y); 
+	} else if (operation==="multiply") {
+		console.log(x + " * " + y + " = " + (x*y));
+		return multiply(x,y); 
+	} else if (operation==="divide") {
+		console.log(x + " / " + y + " = " + (x/y));
+		return divide(x,y);
+	} else {
+		return false;
+	} 
+}
 /**
  * Returns true if `a` is greater than `b`.
  * @param {number} a
