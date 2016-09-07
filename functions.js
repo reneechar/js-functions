@@ -184,7 +184,9 @@ function isEven(n) {
  * @param {number} n
  * @return {boolean} the number is odd
  */
-
+function isOdd(n) {
+	return !isEven(n);
+}
 
 /**
  * Returns a letter grade.
